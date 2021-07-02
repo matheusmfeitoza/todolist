@@ -30,7 +30,7 @@ function removeItensLista(){
                     break
                 }              
             }
-            if(valorDoItemList !== null){
+            if(valorDoItemList !== null && pegarInput.value === ""){
                 const teste = valorDoItemList.length - 1;
                 valorDoItemList[(valorDoItemList.length - 1)].remove()
             pegarInput.value = "";
