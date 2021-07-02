@@ -123,20 +123,15 @@ function removeItensLista(){
     pegarBtnRmv.addEventListener('click',() =>{
         const valorInput = pegarInput.value;
         const valorDoItemList = document.querySelector('[data-list').children
-        if(pegarInput.value === "" || pegarInput.value === null){
-            console.log("Ta vazio")
-                }
-        else{
-            console.log("Não ta vazio")
             for(let i = 0; i < valorDoItemList.length; i++){
                 if(valorDoItemList[i].textContent === valorInput){
                     valorDoItemList[i].remove();
-                    break;
+                    break
                 }
             }
             pegarInput.value = "";
         }
-    })
+    )
 }
 function pausaOform(){
     pegarForm.addEventListener('submit',function(e){
