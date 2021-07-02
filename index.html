@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Módulo 1 JavaScript</title>
+  </head>
+  <body>
+    <h1>To Do List</h1>
+    <p>
+      Para adicionar itens, insira no campo abaixo e clique no +. Para remover
+      os itens digite o item no campo abaixo e clique no -
+    </p>
+    <form action="" class="container" id="form" data-list-form>
+      <input type="text" name="valor" id="input" data-list-input />
+      <button type="submit" id="add" class="btn-add" data-list-btnAdd="">
+        +
+      </button>
+      <button type="submit" id="rmv" class="btn-rmv" data-list-btnRmv="">
+        -
+      </button>
+    </form>
+    <div class="todo" id="toDoContainer">
+      <ul data-list></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
