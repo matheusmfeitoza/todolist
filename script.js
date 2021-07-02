@@ -127,11 +127,14 @@ function removeItensLista(){
                 if(valorDoItemList[i].textContent === valorInput){
                     valorDoItemList[i].remove();
                     break
-                }
+                }              
             }
+            if(valorDoItemList !== null){
+                const teste = valorDoItemList.length - 1;
+                valorDoItemList[(valorDoItemList.length - 1)].remove()
             pegarInput.value = "";
         }
-    )
+    })
 }
 function pausaOform(){
     pegarForm.addEventListener('submit',function(e){
